@@ -1,7 +1,3 @@
-Here’s a basic structure for your README file:
-
----
-
 # PDF Operator 📝
 
 Welcome to **PDF Operator**, a Python-based tool that helps you manage and manipulate PDF files. This tool provides several handy features, including PDF text extraction, PDF merging, splitting PDF pages, and converting images to PDFs. 
