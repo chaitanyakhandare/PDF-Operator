@@ -1,71 +1,95 @@
-# PDF Operator 📝
+# PDF Operator
 
-Welcome to **PDF Operator**, a Python-based tool that helps you manage and manipulate PDF files. This tool provides several handy features, including PDF text extraction, PDF merging, splitting PDF pages, and converting images to PDFs. 
+**PDF Operator** is a Python-based tool that provides multiple PDF functionalities, including merging, splitting, extracting text, and converting images to PDFs. It offers both a console-based version with more features and a GUI-based version for simpler, user-friendly interactions.
 
-## Features 🚀
+## Features
 
-1. **PDF Text Extractor**  
-   Extract text from a specific page of a PDF document and store it in a text file.
+### 1. Console-Based Version (Advanced Features)
+- **PDF Text Extractor**: Extract text from a specific page of a PDF document.
+- **PDF Merger**: Merge multiple PDF files into one.
+- **Split PDF Pages**: Split selected pages from a PDF document into a new file.
+- **Image to PDF Converter**: Convert image files (JPG, PNG, etc.) into a PDF file (with merging capability).
 
-2. **PDF Merger**  
-   Merge multiple PDF files into one, creating a new merged PDF document.
+### 2. GUI-Based Version (Simplified)
+- **PDF Merger**: Merge multiple PDF files through a simple user interface.
+- **Image to PDF Converter**: Convert and merge multiple images into a single PDF file.
 
-3. **Image to PDF Converter**  
-   Convert one or multiple images (JPEG, PNG) into a PDF file and merge them.
+---
 
-4. **PDF Splitter**  
-   Split specific pages from a PDF document into a new file.
+## Getting Started
 
-## Requirements 🛠️
+### Prerequisites
+To run this project, you’ll need the following Python libraries:
+- `PyPDF2`
+- `img2pdf`
+- `tkinter` (for the GUI version)
+- `tkmacosx` (for better button styling in macOS)
 
-Before you begin, ensure you have met the following requirements:
-
-- Python 3.x
-- PyPDF2
-- img2pdf
-
-You can install the dependencies using:
-
+You can install these libraries via pip:
 ```bash
-pip install PyPDF2 img2pdf
+pip install PyPDF2 img2pdf tkmacosx
 ```
 
-## Usage 💻
+---
 
-### 1. Extract Text from a PDF
-Extracts text from a specific page and stores it in a `.txt` file.
+## Console-Based Version
 
-```bash
-Enter full path of your document: [path_to_pdf]
-Enter page number to extract text: [page_number]
-```
+### How to Use
 
-### 2. Merge PDF Files
-Merge multiple PDF files into a single document.
+1. **Clone the repository** and navigate to the folder:
+    ```bash
+    git clone https://github.com/your-username/pdf-operator.git
+    cd pdf-operator
+    ```
 
-```bash
-Enter full paths of files to merge (to stop type: exit)
-```
+2. **Run the script**:
+    ```bash
+    python pdf_operator_console.py
+    ```
 
-### 3. Convert Images to PDF
-Convert images (JPEG/PNG) to a PDF.
+3. **Select the feature** you want to use from the menu:
+    - Press `1` for PDF Text Extractor.
+    - Press `2` for PDF Merger.
+    - Press `3` for Image to PDF conversion.
+    - Press `4` for Split PDF Pages.
+    - Press `99` to exit.
 
-```bash
-Enter full paths of files to merge (to stop type: exit)
-```
+### Features Description
 
-### 4. Split PDF Pages
-Split specific pages from a PDF into a new document.
+- **PDF Text Extractor**:
+    - Enter the path to the PDF file and the page number to extract the text.
+    - The extracted text will be saved to a file.
 
-```bash
-Enter path of PDF file
-Enter page numbers to split (type 'done' to end)
-```
+- **PDF Merger**:
+    - Provide the paths of the PDF files to be merged, and the tool will create a new merged PDF.
 
-### Example Paths
-You can use the following examples to test the tool:
+- **Image to PDF**:
+    - Convert multiple image files (JPG, PNG, etc.) into a single PDF file.
 
-```bash
-/Users/Documents/bill.pdf
-/Users/Downloads/Screenshot.png
-```
+- **Split PDF Pages**:
+    - Select specific pages from a PDF to split into a new file.
+
+---
+
+## GUI-Based Version
+
+### How to Use
+
+1. **Run the GUI-based script**:
+    ```bash
+    python pdf_operator_gui.py
+    ```
+
+2. **Choose your desired feature** from the user interface:
+    - Click on `PDF Merger` to merge PDF files.
+    - Click on `Image to PDF` to convert images into a single PDF.
+
+### Features Description
+
+- **PDF Merger**:
+    - Use the `Open file` button to select multiple PDF files, and then click `Start Merging` to merge them into one PDF.
+
+- **Image to PDF**:
+    - Select multiple image files (JPG, JPEG, PNG) to convert and merge them into a PDF file by clicking the `Convert` button.
+
+---
