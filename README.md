@@ -38,13 +38,13 @@ pip install PyPDF2 img2pdf tkmacosx
 
 1. **Clone the repository** and navigate to the folder:
     ```bash
-    git clone https://github.com/your-username/pdf-operator.git
-    cd pdf-operator
+    https://github.com/chaitanyakhandare/PDF-Operator-withGUI.git
+    cd PDF-Operator-withGUI
     ```
 
 2. **Run the script**:
     ```bash
-    python pdf_operator_console.py
+    python pdfOperator.py
     ```
 
 3. **Select the feature** you want to use from the menu:
